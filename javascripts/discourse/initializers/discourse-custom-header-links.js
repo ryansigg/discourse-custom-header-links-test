@@ -8,7 +8,8 @@ export default {
 
   initialize() {
     withPluginApi("0.8.20", (api) => {
-
+      const customHeaderLinks = settings.Custom_header_links;
+      
       if (!customHeaderLinks.length) {
         return;
       }
