@@ -9,7 +9,6 @@ export default {
   initialize() {
     withPluginApi("0.8.20", (api) => {
       const customHeaderLinks = settings.Custom_header_links;
-      console.log(customHeaderLinks);
 
       if (!customHeaderLinks.length) {
         return;
@@ -73,6 +72,9 @@ export default {
           dHeader.classList.remove("hide-menus");
         }
       });
+      
+            console.log(customHeaderLinks);
+
 
       if (settings.links_position === "left") {
         // if links are aligned left, we need to be able to open in a new tab
